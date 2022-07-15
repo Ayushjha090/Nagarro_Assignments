@@ -1,0 +1,176 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#resume-header{
+    background-image: url('cubes-2492010.jpg');
+    width: 100%;
+    height: 75vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.9;
+}
+
+#drop-down-menu{
+    text-align: right;
+}
+
+.bars {
+    color: white;
+    margin: 0;
+    margin-right: 5%;
+    display: none;
+}
+
+.bars i {
+    font-size: 2rem;
+}
+
+#drop-down-list {
+    margin: 0;
+    background-color: #828470;
+    box-shadow: 0px 4px 8px 1px #535547;
+    display: none;
+}
+
+#drop-down-list ul{
+    margin: 0.2rem 0.2rem;
+    text-align: left;
+    padding: 0px 0.8rem;
+}
+
+#drop-down-menu:hover #drop-down-list{
+    display: block;
+    position: absolute;
+    right: 3%;
+}
+
+#drop-down-list li{
+    margin: 0.4rem 0px;
+}
+
+.no-list-style{
+    list-style: none;
+}
+
+.no-list-style li {
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.no-list-style li a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+.horizontal-list{
+    margin-top: 0px;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+}
+
+.horizontal-list li{
+    padding: 10px 10px;
+    margin: 0px 5px;
+    list-style: none;
+}
+
+.horizontal-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.7rem;
+    
+}
+
+.nav-menu li a{
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover{
+    border-bottom: 1px solid lightgrey;
+    color: lightgrey;
+}
+
+#name{
+    text-align: center;
+}
+
+#name h1{
+    font-size: 7rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.Social-icons{
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: center;
+}
+
+.Social-icons .Horizontal-list li a{
+    font-size: 1.5rem;
+}
+
+.Social-icons li{
+    margin: 0px 20px;
+}
+
+.Social-icons li a{
+    text-decoration: none;
+}
+
+.Social-icons li a i{
+    border-radius: 50%;
+    color: rgb(255, 255, 255)
+}
+
+.Social-icons li a i:hover{
+    box-shadow: 0px 0px 4px 6px rgba(230,196,196,0.5);
+}
+
+#about{
+    padding: 35px 0px;
+}
+
+#img{
+    margin-top: -110px;
+    position: relative;
+    text-align: center;
+}
+
+#img img{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 6px white;
+}
+
+#about p{
+    color: black;
+    text-align: justify;
+    margin: 10px 50px;
+    font-size: 1.5rem;
+    padding: 30px 30px;
+}
+
+@media screen and (max-width: 572px)
+{
+    .bars {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    #name h1{
+        font-size: 100px;
+    }
+}
