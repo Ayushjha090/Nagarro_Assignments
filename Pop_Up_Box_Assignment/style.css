@@ -1,0 +1,14 @@
+#box{
+    width: 65vw;
+    background-color: rgb(255, 221, 171);
+    border-radius: 1rem;
+    display: none;
+}
+
+#box.show{
+    display: block;
+}
+
+#close-pop-up{
+    margin-left: 93%;
+}
