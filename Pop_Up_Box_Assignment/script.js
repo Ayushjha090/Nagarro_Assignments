@@ -47,9 +47,6 @@ $('document').ready(function(){
     }
 
     let email = $('#email');
-    email.on('keyup', function(){
-        emailValidation();
-    });
 
     function emailValidation(){
         let emailVal = $('#email').val();
@@ -64,7 +61,8 @@ $('document').ready(function(){
             $('#emailValidation').hide();
         }
 
-        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailVal)){
+        let mailFormat =  /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if (emailVal.match(mailFormat)){
             $('emailValidation').hide();
         }else{
             $('emailValidation').show();
@@ -78,10 +76,17 @@ $('document').ready(function(){
     let closePopUpBtn = $('#close-pop-up');
     closePopUpBtn.on('click', function(){
         box.removeClass('show');
+        clicked = false;
     });
 
     let submitBtn = $('#submit-btn');
     submitBtn.on('click', function(){
-        box.removeClass('show');
-    })
+        emailValidation();
+        if(emailError){
+            box.removeClass('show');
+            clicked = false;
+        }else{
+            alert('Invalid Email!');
+        }
+    });
 });
