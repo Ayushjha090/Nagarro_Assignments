@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: gray;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.heading{
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 15px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.slideshow-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.my-slides{
+    display: none;
+}
+
+.slide-img{
+    width: 100%;
+}
+
+.text{
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev{
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}

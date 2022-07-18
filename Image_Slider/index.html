@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Slider</title>
+</head>
+<body>
+    <h1 class="heading">Image Slider</h1>
+
+    <div class="slideshow-container">
+
+        <div class="my-slides">
+            <img src="./nature-3082832_1920.jpg" class="slide-img">
+            <div class="text">Image One</div>
+        </div>
+
+        <div class="my-slides">
+            <img src="./mountains-1587287_1920.jpg" class="slide-img">
+            <div class="text">Image Two</div>
+        </div>
+
+        <div class="my-slides">
+            <img src="./tree-736885_1280.jpg" class="slide-img">
+            <div class="text">Image Three</div>
+        </div>
+
+        <a class="prev" onclick="nextSlide(-1)">&#10094</a>
+        <a class="next" onclick="nextSlide(1)">&#10095</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
