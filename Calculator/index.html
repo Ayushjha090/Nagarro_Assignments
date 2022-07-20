@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body class="bg-light text-center">
+    <div class="calc-body container bg-secondary rounded-2 mt-5 py-2 px-3">
+        <div class="row px-2 py-1">
+            <div class="col align-self-center bg-dark rounded-2 p-0">
+                <p class="text-uppercase text-center text-primary fw-bold fs-1 mb-0">Calculator</p>
+            </div>
+        </div>
+        <div class="row py-2 px-2">
+            <div id="display-box" class="bg-white rounded-2 p-2">
+                <p id="display" class="fs-4 p-0 mb-0 text-end"></p>
+            </div>
+        </div>
+        <div class="row py-1 g-2">
+            <div class="col-3">
+                <p class="button cursor-pointer bg-warning operators mb-0 text-center fs-2 rounded-1" data-value="AC">AC</p>
+            </div>
+            <div class="col-3">
+                <p class="button cursor-pointer bg-warning operators mb-0 text-center fs-2 rounded-1" data-value="+/-">+/-</p>
+            </div>
+            <div class="col-3">
+                <p class="button cursor-pointer bg-warning operators mb-0 text-center fs-2 rounded-1" data-value="%">%</p>
+            </div>
+            <div class="col-3">
+                <p class="button cursor-pointer bg-warning operators mb-0 text-center fs-2 rounded-1" data-value="/">/</p>
+            </div>
+        </div>
+        <div class="row py-1 g-2">
+            <div class="col-3">
+                <p class="button cursor-pointer bg-info mb-0 text-center fs-2 rounded-1" data-value="7">7</p>
+            </div>
+            <div class="col-3">
+                <p class="button cursor-pointer bg-info mb-0 text-center fs-2 rounded-1" data-value="8">8</p>
+            </div>
+            <div class="col-3">
+                <p class="button cursor-pointer bg-info mb-0 text-center fs-2 rounded-1" data-value="9">9</p>
+            </div>
+            <div class="col-3">
+                <p class="button cursor-pointer bg-warning mb-0 text-center fs-2 rounded-1" data-value="*">*</p>
+            </div>
+        </div>
+        <div class="row py-1 g-2">
+            <div class="col-3">
+                <p class="button cursor-pointer bg-info mb-0 text-center fs-2 rounded-1" data-value="4">4</p>
+            </div>
+            <div class="col-3">
+                <p class="button cursor-pointer bg-info mb-0 text-center fs-2 rounded-1" data-value="5">5</p>
+            </div>
+            <div class="col-3">
+                <p class="button cursor-pointer bg-info mb-0 text-center fs-2 rounded-1" data-value="6">6</p>
+            </div>
+            <div class="col-3">
+                <p class="button cursor-pointer bg-warning mb-0 text-center fs-2 rounded-1" data-value="-">-</p>
+            </div>
+        </div>
+        <div class="row py-1 g-2">
+            <div class="col-3">
+                <p class="button cursor-pointer bg-info mb-0 text-center fs-2 rounded-1" data-value="3">3</p>
+            </div>
+            <div class="col-3">
+                <p class="button cursor-pointer bg-info mb-0 text-center fs-2 rounded-1" data-value="2">2</p>
+            </div>
+            <div class="col-3">
+                <p class="button cursor-pointer bg-info mb-0 text-center fs-2 rounded-1" data-value="1">1</p>
+            </div>
+            <div class="col-3">
+                <p class="button cursor-pointer bg-warning mb-0 text-center fs-2 rounded-1" data-value="+">+</p>
+            </div>
+        </div>
+        <div class="row py-1 g-2">
+            <div class="col-6">
+                <p class="button cursor-pointer bg-info mb-0 text-center fs-2 rounded-1" data-value="0">0</p>
+            </div>
+            <div class="col-3">
+                <p class="button cursor-pointer bg-info mb-0 text-center fs-2 rounded-1" data-value=".">.</p>
+            </div>
+            <div class="col-3">
+                <p class="button cursor-pointer bg-warning mb-0 text-center fs-2 rounded-1" data-value="="> = </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

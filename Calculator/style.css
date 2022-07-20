@@ -1,0 +1,37 @@
+/* CSS for calculator body */
+.calc-body{
+    width: 30vw;
+}
+
+    /* Media Queries for calculator body */
+    @media only screen and (max-width: 500px){
+        .calc-body{
+            width: 100%;
+        }
+    }
+    @media only screen and (min-width: 500px) and (max-width: 910px){
+        .calc-body{
+            width: 45vw;
+        }
+    }
+
+/* CSS for display of the calculator */
+#display-box{
+    height: 7vh;
+}
+#display{
+    height: 5vh;
+    overflow: hidden;
+}
+
+    /* Media Query for the display of the calculator */
+    @media only screen and (min-height: 800px) and (max-height: 1400px){
+        #display-box{
+            height: 5vh;
+        }
+    }
+
+/* Extra CSS */
+.cursor-pointer{
+    cursor: pointer;
+}
