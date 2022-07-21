@@ -10,6 +10,20 @@ function getDataAjax(){
         let data = JSONres.data;
         for(let i = 0; i < data.length; ++i){
             let matchTitle = data[i].name, venue = data[i].venue, team1 = data[i].teamInfo[0], team2 = data[i].teamInfo[1], team1Score = data[i].score[0], team2Score = data[i].score[1], result = data[i].status;
+            if(team1Score == undefined){
+                team1Score = {
+                    "r": 0,
+                    "w": 0,
+                    "o": 0
+                }
+            }
+            if(team2Score == undefined){
+                team2Score = {
+                    "r": 0,
+                    "w": 0,
+                    "o": 0
+                }
+            }
             addScoresToHtml(matchTitle, venue, result, team1, team2, team1Score, team2Score);
         }
     }
