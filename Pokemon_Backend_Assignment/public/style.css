@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:azure;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#heading-img{
+    width: 350px;
+    display: block;
+    margin: 30px auto;
+}
+
+.content{
+    margin: 5px 10px;
+    padding: 5px 15px;
+    text-align: justify;
+}
+
+.trainer-headings{
+    width: 170px;
+    margin: 5px 30px;
+    text-decoration: underline;
+}
+
+#trainer-img{
+    height: 200px;
+    margin: 2px 40px;
+}
+
+.btn{
+    width: 100px;
+    height: 50px;
+    margin: 10px 40px;
+    font-size: 15px;
+}
+
+.sub-headings{
+    font-size: 30px;
+    margin: 10px 0;
+    text-decoration: underline;
+}
+
+.section{
+    margin: 10px 15px;
+    text-align: center;
+}
+
+#video{
+    width: 300px;
+    height: 300px;
+}
+
+.section{
+    margin: 5px 15px;
+    padding: 5px 5px;
+    text-align: center;
+}
+
+#wiki-frame{
+    width: 300px;
+    height: 600px;
+}
+
+.form-input{
+    display: block;
+    width: 300px;
+    height: 20px;
+    margin: 5px auto;
+}
