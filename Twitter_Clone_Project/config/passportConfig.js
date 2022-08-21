@@ -45,7 +45,7 @@ module.exports = function (passport){
         new GoogleStrategy({
             clientID: process.env.GOOGLE_CLIENT_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-            callBackURL: 'http://127.0.0.1:8000/auth/google/callback'
+            callBackURL: `${process.env.BASE_URL}/auth/google/callback`
         },
         function (accessToken, refreshToken, profile, cb) {
             db.searchByValue({
