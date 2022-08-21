@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0041ef54fc.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./images/Twitter-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title><%= title %> | Twitter</title>
+</head>
+<body>
+    <div class="container-fluid" id="page" data-page="<%= page %>">
+        <div class="row flex-nowrap">
+            <!-- Side Bar -->
+            <div class="side-bar col-auto col-md-4 col-xl-2 px-sm-2 px-0 bg-white">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                    <div class="logo mt-4 mb-3">
+                        <img src="./images/Twitter-logo.png" alt="twitter-logo">
+                    </div>
+                    <ul class="sidebar-nav nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        <li class="nav-item" <%= page==="home"? `class=active-link`:"" %>>
+                            <a href="/home" class="nav-link d-flex align-items-center p-0">
+                                <img src="./images/home.png" alt="home-img">
+                                <p class="ms-1 d-none d-sm-inline fs-4 text-black my-0">Home</p>
+                            </a>
+                        </li>
+                        <li class="nav-item mt-3" <%= page==="explore"?`class=active-link`:"" %>>
+                            <a href="/home" class="nav-link d-flex align-items-center p-0">
+                                <img src="./images/hashtag.png" alt="hash-img">
+                                <p class="ms-1 d-none d-sm-inline fs-4 text-black my-0">Explore</p>
+                            </a>
+                        </li>
+                        <li class="nav-item mt-3">
+                            <a href="#" class="nav-link d-flex align-items-center p-0">
+                                <img src="./images/notification.png" alt="notification-img">
+                                <p class="ms-1 d-none d-sm-inline fs-4 text-black my-0">Notification</p>
+                            </a>
+                        </li>
+                        <li class="nav-item mt-3">
+                            <a href="#" class="nav-link d-flex align-items-center p-0">
+                                <img src="./images/profile.png" alt="profile-img">
+                                <p class="ms-1 d-none d-sm-inline fs-4 text-black my-0">Profile</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="dropdown pb-4">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./images/user-avatar.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
+                            <p class="d-none d-sm-inline fs-4 text-black mx-1 my-0"><%= name %></p>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                            <li><a class="dropdown-item" href="/auth/sign-out">Sign out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main -->
+            <div class="col p-0"> 
+                <%- include(page) -%>
+            </div>
+
+            <!-- Right Section -->
+            <div class="right-side-bar col-auto col-md-4 px-sm-2 p-3 bg-white">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-black min-vh-100">
+                    <div class="trending-tweets-container card bg-secondary border-0" style="--bs-bg-opacity: 0.2">
+                        <div class="card-body">
+                            <h5 class="card-title">What's happening</h5>
+                            <% trendingTweets.forEach(tweet => { %>
+                                <div class="tweet-content-container">
+                                  <div class="tweet-header-section">
+                                    <span class="tweet-user-name">
+                                      <a href="/profile/<%= tweet.userId %>">
+                                        <span> <%= tweet.name %> </span>
+                                      </a>
+                                    </span>
+                                    <span class="tweet-user-handle">
+                                      <a href="/profile/<%= tweet.userId %>">
+                                        <span> @ <%= tweet.username %> </span>
+                                      </a>
+                                    </span>
+                                    <small class="tweet-time"> <%= tweet.tweetTime %> </small>
+                                  </div>
+                                  <div class="tweet-body">
+                                    <div class="tweet-text fs-5 mx-3">
+                                      <span> <%= tweet.tweet %> </span>
+                                    </div>
+                                  </div>
+                                </div>
+                              <% }) %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script/script.js"></script>
+</body>
+</html>

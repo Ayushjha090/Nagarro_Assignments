@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+/* CSS for Twitter background img */
+.bg-img{
+    padding: 0;
+    min-height: 100%;
+    position: relative;
+}
+.bg-img img{
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+.svg-bird{
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 48%;
+    z-index: 2;
+    filter: invert(1);
+  }
+/* CSS FOR LOGO */
+.logo{
+    width: 3rem;
+    height: 3rem;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+/* CSS For Taglines */
+.primary-tagline{
+    font-size: 4rem;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: -3px;
+}
+.secondary-tagline{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: -2px;
+}
+/* CSS For Social Buttons */
+.login-form-container{
+    width: 52%;
+}
+    /* For social login buttons */
+    .social-login-btns a{
+        width: 100%;
+        margin-bottom: 0.8rem;
+        border: 1px solid rgb(211, 211, 211);
+    }
+    .btn-google:hover{
+        border-color: rgb(177, 177, 243);
+        background-color: rgb(228, 235, 240);
+    }
+    /* For horizontal lines and or */
+    .or-section{
+        width: 100%;
+        height: 1rem;
+        font-size: 15px;
+    }
+    .line{
+        width: 45%;
+        height: 0;
+        margin: 0 3px;
+        border-bottom: 1px solid rgb(241, 241, 241);
+    }
+    /* For signup btn */
+    .signup-btn-section a{
+        width: 100%;
+        font-size: 0.9rem;
+    }
+    /* For terms and conditions */
+    .terms{
+        font-size: 11px;
+    }
+    /* For signin btn */
+    .login-btn-section a{
+        width: 100%;
+        border: 1px solid rgb(211, 211, 211);
+    }
+/* CSS For Footer Section */
+.footer-section a{
+    font-size: 0.7rem;
+    margin: 5px 8px;
+    color: gray;
+    text-decoration: none;
+}
+.footer-name{
+    font-size: 0.7rem;
+    color: gray;
+}
+/* Media Queries */
+@media only screen and (min-width: 950px) {
+    .bg-img{
+        width: 54.5%;
+    }
+}
+@media only screen and (max-width: 550px){
+    .primary-tagline{
+        font-size: 2.8rem;
+    }
+    .secondary-tagline{
+        font-size: 1.5rem;
+    }
+    .login-form-container{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 300px){
+    .primary-tagline{
+        font-size: 2rem;
+    }
+    .secondary-tagline{
+        font-size: 1.3rem;
+    }
+    .login-form-container{
+        width: 85%;
+    }
+}

@@ -1,1 +1,7 @@
 /Weather_App/node_modules/
+/My_SQL_Connection/.env
+/My_SQL_Connection/node_modules/
+/MongoDB_Connection/node_modules/
+/Passport_Authentication/node_modules/
+/Twitter_Clone_Project/node_modules/
+/Twitter_Clone_Project/.env
