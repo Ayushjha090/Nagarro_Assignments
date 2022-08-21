@@ -4,7 +4,7 @@
   "description": "Twitter Clone Using Node.Js",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ayush Jha",
@@ -22,5 +22,8 @@
     "passport-google-auth": "^1.0.2",
     "passport-google-oauth20": "^2.0.0",
     "passport-local": "^1.0.0"
+  },
+  "engines": {
+    "node": "v16.13.2"
   }
 }

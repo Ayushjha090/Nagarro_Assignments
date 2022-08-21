@@ -9,7 +9,7 @@
                 <div class="avatar">
                     <img src="<%= userData.avatar %>" alt="avatart-img">
                 </div>
-                <div class="tweet-info d-flex flex-column p-2 fs-4">
+                <div class="tweet-info d-flex flex-column p-1">
                     <input type="hidden" id="userId" name="userId" value="<%= userData.id %>">
                     <textarea name="tweet" id="tweet" class="mx-3" placeholder="What's happening"></textarea>
                     <button type="submit" class="btn btn-primary align-self-end mt-2 rounded-pill">Tweet</button>
@@ -46,7 +46,7 @@
                 </div>
                 <div class="tweet-content">
                     <div class="tweet-body">
-                        <span class="tweet-text fs-4 m-4">
+                        <span class="tweet-text m-4">
                             <span>
                                 <%= tweet.tweet %>
                             </span>
