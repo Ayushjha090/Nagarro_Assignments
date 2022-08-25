@@ -1,0 +1,96 @@
+<%- include("../partials/header") %>
+
+<div class="container">
+  <div class="jumbotron bg-primary text-white my-4 my-lg-5 py-3 text-center rounded-pill">
+    <h3>Welcome to Aapki Apni Dukaan!!!</h3>
+  </div>
+
+  <div class="slideshow-container">
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="/mobile-phone-sale.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="/laptops.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="/headphones-sale.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="/mobil-phone-sale-2.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="/laptops-sale.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="/headphones-sale-2.jpg" style="width:100%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+  </div>
+
+  <div class="row mt-5">
+    <div class="card ml-5 mb-5" style="width: 20rem; border: 3px solid black; border-radius: 6px;">
+      <img
+        class="card-img-top"
+        src="https://cms-assets.bajajfinserv.in/is/image/bajajfinance/made-in-india-mobiles?scl=1"
+        alt="Card image cap"
+        height="300px"
+      />
+      <div class="card-body text-center">
+        <h5 class="card-title">Mobile Phones</h5>
+        <p class="card-text">
+          Show off with a brand new phone from trusted brands.
+        </p>
+        <a href="/home/mobile" class="btn btn-dark">check here</a>
+      </div>
+    </div>
+    <div class="card ml-5 mb-5" style="width: 20rem; border: 3px solid black; border-radius: 6px;">
+      <img
+        class="card-img-top"
+        src="https://www.cnet.com/a/img/resize/4e82f3a17554a5aff8089194237de5a3acfce3b4/2022/04/27/b796792b-5b34-4405-83eb-efc66371ee06/samsung-galaxy-book-2-pro-360-01.jpg?auto=webp&fit=crop&height=630&width=1200"
+        alt="Card image cap"
+        height="300px"
+      />
+      <div class="card-body text-center">
+        <h5 class="card-title">Laptops</h5>
+        <p class="card-text">
+          Get exciting offers on the premium and gaming Laptops.
+        </p>
+        <a href="/home/laptop" class="btn btn-dark">check here</a>
+      </div>
+    </div>
+    <div class="card ml-5 mb-5" style="width: 20rem; border: 3px solid black; border-radius: 6px;">
+      <img
+        class="card-img-top"
+        src="https://media.gq-magazine.co.uk/photos/62bc479db9eaa411050fd8e0/master/pass/H_01.jpg"
+        alt="Card image cap"
+        height="300px"
+      />
+      <div class="card-body text-center">
+        <h5 class="card-title">Headphones</h5>
+        <p class="card-text">
+          Gift your family and friends with quality headphones from our store.
+        </p>
+        <a href="/home/headphones" class="btn btn-dark">check here</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="/script.js"></script>
+<%- include("../partials/footer") %>
